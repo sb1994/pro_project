@@ -1,0 +1,56 @@
+#projects>row{
+    
+margin-right: 5%;    
+}
+
+#projects small {
+  color: #f0f0f0;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#projects .project-thumb {
+  position: relative;
+  padding: 0;
+  margin-top: 32px;
+}
+
+#projects .project-thumb .project-overlay {
+  position: absolute;
+  background: #222;
+  background: -webkit-linear-gradient(left top, #753a88, #cc2b5e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #753a88, #cc2b5e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #753a88, #cc2b5e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #753a88, #cc2b5e); /* Standard syntax */    
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 83%;
+  height: 100%;
+  text-align: center;
+  vertical-align: top;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+
+
+}
+
+#projects .project-item {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+}
+
+#projects .project-thumb:hover .project-overlay {
+  opacity: 0.9;
+}
+
+#projects .text-center {
+  padding-top: 62px;
+}
